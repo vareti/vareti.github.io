@@ -1,6 +1,6 @@
-### Using Kubernetes client-go patch API
+### Using [Kubernetes](https://github.com/kubernetes/kubernetes) client-go patch API
 
-To demonstrate client-go patch API, I am picking the use case of adding a label to kubernetes nodes. In this example, JSON merge patching mechanism will be used.
+To demonstrate [client-go](https://github.com/kubernetes/client-go) patch API, I am picking the use case of adding a label to kubernetes nodes. In this example, JSON merge patching mechanism will be used.
 
     import (
         ...
