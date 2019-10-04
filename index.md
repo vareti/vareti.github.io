@@ -21,7 +21,7 @@ To demonstrate [client-go](https://github.com/kubernetes/client-go) patch API, I
 
     ...
 
-    func labelNode(clientset *kubernetes.Clientset, node *corev1.Node) {
+    func labelNode(clientset *kubernetes.Clientset, node *corev1.Node) error {
         //create a copy of node structure
         _, oldData := json.Marshal(node)
         
@@ -40,5 +40,7 @@ To demonstrate [client-go](https://github.com/kubernetes/client-go) patch API, I
         if err != nil {
             return err
         }
+
+        return nil
     }
 
